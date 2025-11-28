@@ -1,0 +1,23 @@
+GSUtil commands:
+
+gsutil cp -r gs://gcp-dravi6 gs://gcp-dravi1  		##### Copy one bucket to another
+gsutil cp -r gs://gcp-dravi6 C:\Users\dravi\Downloads	##### Copy bucket to local
+gsutil rm gs://gcp-dravi1/gcp-dravi6/wordcount.txt
+gsutil rm -r gs://gcp-dravi1/				##### Deleting bucket
+gsutil ls						##### list buckets
+gsutil mb -l asia-south1 -c Standard gs://gcp-dravi1	##### Create bucket
+gsutil rb gs://gcp-dravi6				##### Delete bucket
+gsutil mb gs://gcp-dravi6
+gsutil cp "C:\Users\A754946\Downloads\wordcount.txt" gs://gcp-dravi6  ##### Copy file from local to bucket
+
+Google Cloud Storage commands:
+ 
+gcloud storage cp "C:\Users\A754946\Downloads\wordcount.txt" gs://gcp-dravi4    ###### Copy file from local to bucket
+gcloud storage buckets list						        ###### list buckets
+gcloud storage buckets create gs://gcp-dravi6					###### Create bucket
+gcloud storage buckets list gs://gcp-dravi6					###### list particular bucket
+gcloud --version								###### gcloud version details
+gcloud config get-value project							###### gcloud project details
+gcloud storage folders create gs://gcp-dravi6/sample				###### Create folder fails if its not hierarchical namespace bucket
+gcloud storage buckets create gs://gcp-dravi6-hns --enable-hierarchical-namespace --uniform-bucket-level-access  ###### create hns bucket
+gcloud storage folders delete gs://gcp-dravi6/sample				###### Delete bucket
