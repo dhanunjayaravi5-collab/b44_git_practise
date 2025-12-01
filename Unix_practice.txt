@@ -1,0 +1,41 @@
+[practice@instance-20201214-1151 /home/practice]$ mkdir Dec_01122025
+
+[practice@instance-20201214-1151 /home/practice]$ cd Dec_01122025/
+
+[practice@instance-20201214-1151 /home/practice/Dec_01122025]$ touch practice.txt
+
+[practice@instance-20201214-1151 /home/practice/Dec_01122025]$ vi practice_1.txt
+Hi
+This is practice doc for unix commands
+head
+tail
+touch
+chmod -R 777 practice.txt
+chown user:user practice.txt
+cp practice.txt /home/users/Dec_01122025
+mv practice.txt /home/users/
+rm /home/users/practice.txt
+cat /home/users/Dec_01122025
+
+[practice@instance-20201214-1151 /home/practice/Dec_01122025]$ ls -latr practice_1.txt
+-rw-rw-r--.   1 practice practice    0 Dec  1 11:31 practice_1.txt
+
+[practice@instance-20201214-1151 /home/practice/Dec_01122025]$ chmod -R 777 practice_1.txt
+[practice@instance-20201214-1151 /home/practice/Dec_01122025]$ ls -latr
+-rwxrwxrwx.   1 practice practice    0 Dec  1 11:31 practice_1.txt
+
+[practice@instance-20201214-1151 /home/practice/Dec_01122025]$ ls -l prac*
+-rwxrwxrwx. 1 practice practice   0 Dec  1 11:31 practice_1.txt
+-rw-rw-r--. 1 practice practice 242 Dec  1 11:30 practice.txt
+
+
+[practice@instance-20201214-1151 /home/practice/Dec_01122025]$ rm practice.txt
+[practice@instance-20201214-1151 /home/practice/Dec_01122025]$ ls -l
+total 0
+-rwxrwxrwx. 1 practice practice 0 Dec  1 11:31 practice_1.txt
+
+
+
+
+
+
